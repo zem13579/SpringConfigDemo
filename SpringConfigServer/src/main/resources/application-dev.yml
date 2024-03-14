@@ -1,18 +1,7 @@
 spring:
-  profiles:
-    active: composite
   application:
     name: config-server
-  cloud:
-    config:
-      server:
-        composite:
-          - type: native
-            search-locations: ${HOME}/Desktop/config
-        bootstrap: true
-server:
-  port: 9090
-  servlet:
-    context-path: /config-server
+
 env:
-  tag: fromDev
+  tag: dev
+

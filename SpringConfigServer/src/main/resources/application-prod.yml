@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: config-server
-server:
-  port: 9090
-  servlet:
-    context-path: /config-server
-env:
-  tag: fromPro
