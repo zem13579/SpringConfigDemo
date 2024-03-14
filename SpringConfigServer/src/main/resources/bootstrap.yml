@@ -1,12 +1,12 @@
+server:
+  port: 8888
 spring:
+  application:
+    name: spring-cloud-config-server
   cloud:
     config:
       server:
-        composite:
-          - type: git
-            uri: ${repo1}
-          - type: git
-            uri: ${repo1}
-        bootstrap: true
+        native:
+          search-locations: [classpath:/]
   profiles:
-    active: composite
+    active: native
