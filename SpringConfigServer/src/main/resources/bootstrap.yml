@@ -1,4 +1,6 @@
-
+server:
+  servlet:
+    context-path: /config-server
 spring:
   application:
     name: config-server
@@ -9,6 +11,7 @@ spring:
         - type: native
           search-locations: [ classpath:/svcA, classpath:/svcB ]
         bootstrap: true
+        prefix: /config
   profiles:
     active: composite
 
@@ -17,7 +20,7 @@ eureka:
     hostname: localhost
     instance-id: config-server
     metadataMap:
-      configPath: /${spring.application.name}
+      configPath: /${spring.application.name}/${spring.cloud.config.server.prefix}
   client:
     registerWithEureka: true
     fetchRegistry: false

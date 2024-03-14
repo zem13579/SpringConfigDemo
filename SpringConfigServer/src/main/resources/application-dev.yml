@@ -1,7 +1,6 @@
 server:
   port: 8086
-  servlet:
-    context-path: /config-server
+
 env:
   tag: dev
 
