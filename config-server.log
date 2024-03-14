@@ -22085,3 +22085,411 @@ User-Agent: Java-EurekaClient/v1.10.14
 2024-03-14 23:54:41.840 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
 2024-03-14 23:54:41.840 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://localhost:8086/config-server/eureka//apps/CONFIG-SERVER/config-server; statusCode=200
 2024-03-14 23:54:41.840 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/config-server - Heartbeat status: 200
+2024-03-14 23:54:48.665 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [348]
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read from buffer: [0]
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read direct from socket: [169]
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [GET /config-server/eureka/apps/delta HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+
+]
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /config-server/eureka/apps/delta
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.e.registry.AbstractInstanceRegistry  : The number of elements in the delta queue is : 2
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.e.registry.AbstractInstanceRegistry  : The instance id config-server is found with status UP and actiontype ADDED
+2024-03-14 23:54:48.666 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.e.registry.AbstractInstanceRegistry  : The instance id host.docker.internal:svcA:8083 is found with status UP and actiontype ADDED
+2024-03-14 23:54:48.667 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.eureka.registry.ResponseCacheImpl    : New application cache entry {name=ALL_APPS_DELTA, type=Application, format=JSON} with apps hashcode UP_2_
+2024-03-14 23:54:48.668 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [169]
+2024-03-14 23:54:48.668 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read from buffer: [0]
+2024-03-14 23:54:48.668 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read direct from socket: [0]
+2024-03-14 23:54:48.668 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:54:48.668 DEBUG 257080 --- [http-nio-8086-exec-8] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:54:48.668 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]]
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [169]
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read from buffer: [0]
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read direct from socket: [261]
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [PUT /config-server/eureka/apps/SVCA/host.docker.internal:svcA:8083?status=UP&lastDirtyTimestamp=1710431658658 HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+Content-Length: 0
+
+]
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.c.authenticator.AuthenticatorBase    : Security checking request PUT /config-server/eureka/apps/SVCA/host.docker.internal:svcA:8083
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] o.s.c.n.eureka.server.InstanceRegistry   : renew SVCA serverId host.docker.internal:svcA:8083, isReplication {}false
+2024-03-14 23:54:48.669 DEBUG 257080 --- [http-nio-8086-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Fetching applications registry with remote regions: false, Regions argument []
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Processing override status using rule: [com.netflix.eureka.registry.rule.DownOrStartingRule, com.netflix.eureka.registry.rule.OverrideExistsRule, com.netflix.eureka.registry.rule.LeaseExistsRule, com.netflix.eureka.registry.rule.AlwaysMatchInstanceStatusRule]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] c.n.e.registry.rule.LeaseExistsRule      : There is already an existing lease with status UP  for instance host.docker.internal:svcA:8083
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] c.n.eureka.resources.InstanceResource    : Found (Renew): SVCA - host.docker.internal:svcA:8083; reply status=200
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8086-Acceptor] latch=3
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [261]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read from buffer: [0]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [182]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read direct from socket: [0]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received [GET /config-server/eureka/apps/?regions=us-east-1 HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+
+]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]]
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] org.apache.tomcat.util.http.Parameters   : Set query string encoding to UTF-8
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /config-server/eureka/apps/
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:54:48.670 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:54:48.671 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [182]
+2024-03-14 23:54:48.671 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:54:48.671 DEBUG 257080 --- [http-nio-8086-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [0]
+2024-03-14 23:54:48.671 DEBUG 257080 --- [http-nio-8086-exec-10] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:54:48.671 DEBUG 257080 --- [http-nio-8086-exec-10] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:54:48.671 DEBUG 257080 --- [http-nio-8086-exec-10] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]]
+2024-03-14 23:54:55.165 DEBUG 257080 --- [RMI TCP Connection(6)-172.28.96.1] sun.rmi.transport.tcp                    : RMI TCP Connection(6)-172.28.96.1: (port 50752) connection closed
+2024-03-14 23:54:55.165 DEBUG 257080 --- [RMI TCP Connection(6)-172.28.96.1] sun.rmi.transport.tcp                    : RMI TCP Connection(6)-172.28.96.1: close connection
+2024-03-14 23:55:00.016 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache
+2024-03-14 23:55:00.016 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache for key : Application ALL_APPS_DELTA V2 JSON
+2024-03-14 23:55:00.016 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache for key : Application ALL_APPS V2 JSON
+2024-03-14 23:55:00.016 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache for key : Application ALL_APPS V2 JSON
+2024-03-14 23:55:11.045 DEBUG 257080 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1710431711045 sessioncount 0
+2024-03-14 23:55:11.045 DEBUG 257080 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2024-03-14 23:55:11.815 DEBUG 257080 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30 SECONDS
+2024-03-14 23:55:11.815 DEBUG 257080 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30 SECONDS
+2024-03-14 23:55:11.846 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8086, timeout = 5000
+2024-03-14 23:55:11.846 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8086] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+2024-03-14 23:55:11.846 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8086][null]
+2024-03-14 23:55:11.846 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Stale connection check
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.client.protocol.RequestAddCookies  : CookieSpec selected: default
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.client.protocol.RequestAuthCache   : Auth cache not set in the context
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.c.p.RequestTargetAuthentication    : Target auth state: UNCHALLENGED
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.c.p.RequestProxyAuthentication     : Proxy auth state: UNCHALLENGED
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Attempt 1 to execute request
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.impl.conn.DefaultClientConnection  : Sending request: PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "DiscoveryIdentity-Id: 192.168.1.6[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Accept-Encoding: gzip[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Content-Length: 0[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Host: localhost:8086[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Connection: Keep-Alive[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "User-Agent: Java-EurekaClient/v1.10.14[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "[\r][\n]"
+2024-03-14 23:55:11.861 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> DiscoveryIdentity-Name: DefaultClient
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> DiscoveryIdentity-Version: 1.4
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> DiscoveryIdentity-Id: 192.168.1.6
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Accept-Encoding: gzip
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Content-Length: 0
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Host: localhost:8086
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Connection: Keep-Alive
+2024-03-14 23:55:11.862 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> User-Agent: Java-EurekaClient/v1.10.14
+2024-03-14 23:55:11.862 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [182]
+2024-03-14 23:55:11.862 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read from buffer: [0]
+2024-03-14 23:55:11.862 DEBUG 257080 --- [http-nio-8086-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read direct from socket: [348]
+2024-03-14 23:55:11.862 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received [PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1
+DiscoveryIdentity-Name: DefaultClient
+DiscoveryIdentity-Version: 1.4
+DiscoveryIdentity-Id: 192.168.1.6
+Accept-Encoding: gzip
+Content-Length: 0
+Host: localhost:8086
+Connection: Keep-Alive
+User-Agent: Java-EurekaClient/v1.10.14
+
+]
+2024-03-14 23:55:11.862 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.c.authenticator.AuthenticatorBase    : Security checking request PUT /config-server/eureka/apps/CONFIG-SERVER/config-server
+2024-03-14 23:55:11.862 DEBUG 257080 --- [http-nio-8086-exec-1] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:11.862 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] o.s.c.n.eureka.server.InstanceRegistry   : renew CONFIG-SERVER serverId config-server, isReplication {}false
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Fetching applications registry with remote regions: false, Regions argument []
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Processing override status using rule: [com.netflix.eureka.registry.rule.DownOrStartingRule, com.netflix.eureka.registry.rule.OverrideExistsRule, com.netflix.eureka.registry.rule.LeaseExistsRule, com.netflix.eureka.registry.rule.AlwaysMatchInstanceStatusRule]
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] c.n.e.registry.rule.LeaseExistsRule      : There is already an existing lease with status UP  for instance config-server
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] c.n.eureka.resources.InstanceResource    : Found (Renew): CONFIG-SERVER - config-server; reply status=200
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "HTTP/1.1 200 [\r][\n]"
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Content-Type: application/xml[\r][\n]"
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [348]
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Content-Length: 0[\r][\n]"
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read from buffer: [0]
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Date: Thu, 14 Mar 2024 15:55:11 GMT[\r][\n]"
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Keep-Alive: timeout=60[\r][\n]"
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Connection: keep-alive[\r][\n]"
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read direct from socket: [0]
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "[\r][\n]"
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.impl.conn.DefaultClientConnection  : Receiving response: HTTP/1.1 200 
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << HTTP/1.1 200 
+2024-03-14 23:55:11.863 DEBUG 257080 --- [http-nio-8086-exec-1] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Content-Type: application/xml
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Content-Length: 0
+2024-03-14 23:55:11.863 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Date: Thu, 14 Mar 2024 15:55:11 GMT
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Keep-Alive: timeout=60
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Connection: keep-alive
+2024-03-14 23:55:11.864 DEBUG 257080 --- [http-nio-8086-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]]
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Connection can be kept alive for 60000 MILLISECONDS
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8086][null]
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8086][null]; keep alive for 60000 MILLISECONDS
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://localhost:8086/config-server/eureka//apps/CONFIG-SERVER/config-server; statusCode=200
+2024-03-14 23:55:11.864 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/config-server - Heartbeat status: 200
+2024-03-14 23:55:18.673 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [348]
+2024-03-14 23:55:18.673 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:18.673 DEBUG 257080 --- [http-nio-8086-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [261]
+2024-03-14 23:55:18.673 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [PUT /config-server/eureka/apps/SVCA/host.docker.internal:svcA:8083?status=UP&lastDirtyTimestamp=1710431658658 HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+Content-Length: 0
+
+]
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.c.authenticator.AuthenticatorBase    : Security checking request PUT /config-server/eureka/apps/SVCA/host.docker.internal:svcA:8083
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] o.s.c.n.eureka.server.InstanceRegistry   : renew SVCA serverId host.docker.internal:svcA:8083, isReplication {}false
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Fetching applications registry with remote regions: false, Regions argument []
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Processing override status using rule: [com.netflix.eureka.registry.rule.DownOrStartingRule, com.netflix.eureka.registry.rule.OverrideExistsRule, com.netflix.eureka.registry.rule.LeaseExistsRule, com.netflix.eureka.registry.rule.AlwaysMatchInstanceStatusRule]
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] c.n.e.registry.rule.LeaseExistsRule      : There is already an existing lease with status UP  for instance host.docker.internal:svcA:8083
+2024-03-14 23:55:18.674 DEBUG 257080 --- [http-nio-8086-exec-2] c.n.eureka.resources.InstanceResource    : Found (Renew): SVCA - host.docker.internal:svcA:8083; reply status=200
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [261]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [0]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-2] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [261]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [169]
+2024-03-14 23:55:18.675 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET /config-server/eureka/apps/delta HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+
+]
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /config-server/eureka/apps/delta
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [169]
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [0]
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:18.676 DEBUG 257080 --- [http-nio-8086-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]]
+2024-03-14 23:55:18.678 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [169]
+2024-03-14 23:55:18.678 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:18.678 DEBUG 257080 --- [http-nio-8086-exec-4] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [182]
+2024-03-14 23:55:18.678 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received [GET /config-server/eureka/apps/?regions=us-east-1 HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+
+]
+2024-03-14 23:55:18.678 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /config-server/eureka/apps/
+2024-03-14 23:55:18.678 DEBUG 257080 --- [http-nio-8086-exec-4] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:18.678 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:18.679 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [182]
+2024-03-14 23:55:18.679 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:18.679 DEBUG 257080 --- [http-nio-8086-exec-4] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [0]
+2024-03-14 23:55:18.679 DEBUG 257080 --- [http-nio-8086-exec-4] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:18.679 DEBUG 257080 --- [http-nio-8086-exec-4] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:18.679 DEBUG 257080 --- [http-nio-8086-exec-4] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]]
+2024-03-14 23:55:30.024 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache
+2024-03-14 23:55:30.024 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache for key : Application ALL_APPS_DELTA V2 JSON
+2024-03-14 23:55:30.024 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache for key : Application ALL_APPS V2 JSON
+2024-03-14 23:55:30.024 DEBUG 257080 --- [Eureka-CacheFillTimer] c.n.eureka.registry.ResponseCacheImpl    : Updating the client cache from response cache for key : Application ALL_APPS V2 JSON
+2024-03-14 23:55:41.820 DEBUG 257080 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.MonitoredConnectionManager  : Closing connections idle longer than 30 SECONDS
+2024-03-14 23:55:41.820 DEBUG 257080 --- [Apache-HttpClient-Conn-Cleaner2] c.n.d.shared.NamedConnectionPool         : Closing connections idle longer than 30 SECONDS
+2024-03-14 23:55:41.866 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Get connection: {}->http://localhost:8086, timeout = 5000
+2024-03-14 23:55:41.866 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : [{}->http://localhost:8086] total kept alive: 1, total issued: 0, total allocated: 1 out of 200
+2024-03-14 23:55:41.866 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Getting free connection [{}->http://localhost:8086][null]
+2024-03-14 23:55:41.866 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Stale connection check
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.client.protocol.RequestAddCookies  : CookieSpec selected: default
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.client.protocol.RequestAuthCache   : Auth cache not set in the context
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.c.p.RequestTargetAuthentication    : Target auth state: UNCHALLENGED
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.c.p.RequestProxyAuthentication     : Proxy auth state: UNCHALLENGED
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Attempt 1 to execute request
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.impl.conn.DefaultClientConnection  : Sending request: PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "DiscoveryIdentity-Name: DefaultClient[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "DiscoveryIdentity-Version: 1.4[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "DiscoveryIdentity-Id: 192.168.1.6[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Accept-Encoding: gzip[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Content-Length: 0[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Host: localhost:8086[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "Connection: Keep-Alive[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "User-Agent: Java-EurekaClient/v1.10.14[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  >> "[\r][\n]"
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> DiscoveryIdentity-Name: DefaultClient
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> DiscoveryIdentity-Version: 1.4
+2024-03-14 23:55:41.882 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> DiscoveryIdentity-Id: 192.168.1.6
+2024-03-14 23:55:41.883 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Accept-Encoding: gzip
+2024-03-14 23:55:41.883 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Content-Length: 0
+2024-03-14 23:55:41.883 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Host: localhost:8086
+2024-03-14 23:55:41.883 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> Connection: Keep-Alive
+2024-03-14 23:55:41.883 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : >> User-Agent: Java-EurekaClient/v1.10.14
+2024-03-14 23:55:41.883 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [182]
+2024-03-14 23:55:41.883 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read from buffer: [0]
+2024-03-14 23:55:41.883 DEBUG 257080 --- [http-nio-8086-exec-5] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read direct from socket: [348]
+2024-03-14 23:55:41.883 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received [PUT /config-server/eureka/apps/CONFIG-SERVER/config-server?status=UP&lastDirtyTimestamp=1710431651870 HTTP/1.1
+DiscoveryIdentity-Name: DefaultClient
+DiscoveryIdentity-Version: 1.4
+DiscoveryIdentity-Id: 192.168.1.6
+Accept-Encoding: gzip
+Content-Length: 0
+Host: localhost:8086
+Connection: Keep-Alive
+User-Agent: Java-EurekaClient/v1.10.14
+
+]
+2024-03-14 23:55:41.883 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.c.authenticator.AuthenticatorBase    : Security checking request PUT /config-server/eureka/apps/CONFIG-SERVER/config-server
+2024-03-14 23:55:41.883 DEBUG 257080 --- [http-nio-8086-exec-5] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:41.883 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] o.s.c.n.eureka.server.InstanceRegistry   : renew CONFIG-SERVER serverId config-server, isReplication {}false
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Fetching applications registry with remote regions: false, Regions argument []
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Processing override status using rule: [com.netflix.eureka.registry.rule.DownOrStartingRule, com.netflix.eureka.registry.rule.OverrideExistsRule, com.netflix.eureka.registry.rule.LeaseExistsRule, com.netflix.eureka.registry.rule.AlwaysMatchInstanceStatusRule]
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] c.n.e.registry.rule.LeaseExistsRule      : There is already an existing lease with status UP  for instance config-server
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] c.n.eureka.resources.InstanceResource    : Found (Renew): CONFIG-SERVER - config-server; reply status=200
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "HTTP/1.1 200 [\r][\n]"
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [348]
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Content-Type: application/xml[\r][\n]"
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Content-Length: 0[\r][\n]"
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read from buffer: [0]
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Date: Thu, 14 Mar 2024 15:55:41 GMT[\r][\n]"
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Keep-Alive: timeout=60[\r][\n]"
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "Connection: keep-alive[\r][\n]"
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Read direct from socket: [0]
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.wire                     :  << "[\r][\n]"
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.h.impl.conn.DefaultClientConnection  : Receiving response: HTTP/1.1 200 
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << HTTP/1.1 200 
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Content-Type: application/xml
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Content-Length: 0
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Date: Thu, 14 Mar 2024 15:55:41 GMT
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Keep-Alive: timeout=60
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] org.apache.http.headers                  : << Connection: keep-alive
+2024-03-14 23:55:41.884 DEBUG 257080 --- [http-nio-8086-exec-5] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@74d19c23:org.apache.tomcat.util.net.NioChannel@74cb05ac:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50762]]
+2024-03-14 23:55:41.884 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] o.a.http.impl.client.DefaultHttpClient   : Connection can be kept alive for 60000 MILLISECONDS
+2024-03-14 23:55:41.885 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.MonitoredConnectionManager  : Released connection is reusable.
+2024-03-14 23:55:41.885 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Releasing connection [{}->http://localhost:8086][null]
+2024-03-14 23:55:41.885 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Pooling connection [{}->http://localhost:8086][null]; keep alive for 60000 MILLISECONDS
+2024-03-14 23:55:41.885 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.shared.NamedConnectionPool         : Notifying no-one, there are no waiting threads
+2024-03-14 23:55:41.885 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] n.d.s.t.j.AbstractJerseyEurekaHttpClient : Jersey HTTP PUT http://localhost:8086/config-server/eureka//apps/CONFIG-SERVER/config-server; statusCode=200
+2024-03-14 23:55:41.885 DEBUG 257080 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/config-server - Heartbeat status: 200
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [261]
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-7] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [348]
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-7] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Read from buffer: [0]
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-9] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [169]
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received [GET /config-server/eureka/apps/delta HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+
+]
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-8086-Acceptor] latch=4
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /config-server/eureka/apps/delta
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-7] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1345) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1255) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:799) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:359) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_342]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_342]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_342]
+
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-9] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [0]
+2024-03-14 23:55:48.683 DEBUG 257080 --- [http-nio-8086-exec-7] o.apache.coyote.http11.Http11Processor   : Error state [CLOSE_CONNECTION_NOW] reported while processing request
+
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1345) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1255) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11InputBuffer.fill(Http11InputBuffer.java:799) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:359) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261) ~[tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_342]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_342]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.46.jar:9.0.46]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_342]
+
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read from buffer: [0]
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-7] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]], Status in: [OPEN_READ], State out: [CLOSED]
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read direct from socket: [261]
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-7] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-8086-exec-7] latch=4
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received [PUT /config-server/eureka/apps/SVCA/host.docker.internal:svcA:8083?status=UP&lastDirtyTimestamp=1710431658658 HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+Content-Length: 0
+
+]
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-7] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@4e433b31].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4d6b4e5a:org.apache.tomcat.util.net.NioChannel@2dba5c80:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50773]])
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.tomcat.util.http.Parameters   : Set query string encoding to UTF-8
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.c.authenticator.AuthenticatorBase    : Security checking request PUT /config-server/eureka/apps/SVCA/host.docker.internal:svcA:8083
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:48.684 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [169]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read from buffer: [0]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-9] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Read direct from socket: [0]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] o.s.c.n.eureka.server.InstanceRegistry   : renew SVCA serverId host.docker.internal:svcA:8083, isReplication {}false
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-9] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Fetching applications registry with remote regions: false, Regions argument []
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-9] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-9] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@69050825:org.apache.tomcat.util.net.NioChannel@67c2eb75:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50813]]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Processing override status using rule: [com.netflix.eureka.registry.rule.DownOrStartingRule, com.netflix.eureka.registry.rule.OverrideExistsRule, com.netflix.eureka.registry.rule.LeaseExistsRule, com.netflix.eureka.registry.rule.AlwaysMatchInstanceStatusRule]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.e.registry.rule.LeaseExistsRule      : There is already an existing lease with status UP  for instance host.docker.internal:svcA:8083
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] c.n.eureka.resources.InstanceResource    : Found (Renew): SVCA - host.docker.internal:svcA:8083; reply status=200
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [261]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read from buffer: [0]
+2024-03-14 23:55:48.685 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read direct from socket: [0]
+2024-03-14 23:55:48.686 DEBUG 257080 --- [http-nio-8086-exec-8] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:48.686 DEBUG 257080 --- [http-nio-8086-exec-8] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:48.686 DEBUG 257080 --- [http-nio-8086-exec-8] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]]
+2024-03-14 23:55:48.687 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [261]
+2024-03-14 23:55:48.687 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read from buffer: [0]
+2024-03-14 23:55:48.687 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read direct from socket: [182]
+2024-03-14 23:55:48.687 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received [GET /config-server/eureka/apps/?regions=us-east-1 HTTP/1.1
+Accept: application/json, application/*+json
+User-Agent: Java/1.8.0_342
+Host: localhost:8086
+Connection: keep-alive
+
+]
+2024-03-14 23:55:48.687 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /config-server/eureka/apps/
+2024-03-14 23:55:48.687 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2024-03-14 23:55:48.687 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Before fill(): parsingHeader: [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position(): [0], byteBuffer.limit(): [0], end: [182]
+2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read from buffer: [0]
+2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Read direct from socket: [0]
+2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received []
+2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Status in: [OPEN_READ], State out: [OPEN]
+2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]]
