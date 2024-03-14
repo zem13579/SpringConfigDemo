@@ -18,3 +18,5 @@ eureka:
 logging:
   level:
     root: debug
+  file:
+    name: svcA.log
