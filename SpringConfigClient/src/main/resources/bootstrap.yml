@@ -3,3 +3,18 @@ spring:
     name: svcA
   profiles:
     active: pro
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8086/config-server/eureka/
+
+logging:
+  level:
+    root: debug

@@ -1,12 +1,26 @@
-server:
-  port: 8888
+
 spring:
   application:
-    name: spring-cloud-config-server
+    name: config-server
   cloud:
     config:
       server:
-        native:
-          search-locations: [classpath:/]
+        composite:
+        - type: native
+          search-locations: [ classpath:/svcA, classpath:/svcB ]
+        bootstrap: true
   profiles:
-    active: native
+    active: composite
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: config-server
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/${spring.application.name}/eureka/
+logging:
+  level:
+    root: debug
