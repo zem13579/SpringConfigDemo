@@ -30,6 +30,6 @@ eureka:
 
 logging:
   level:
-    root: debug
+    root: info
   file:
     name: config-server.log

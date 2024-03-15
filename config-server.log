@@ -22493,3 +22493,65 @@ Connection: keep-alive
 2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] o.a.coyote.http11.Http11InputBuffer      : Received []
 2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]], Status in: [OPEN_READ], State out: [OPEN]
 2024-03-14 23:55:48.689 DEBUG 257080 --- [http-nio-8086-exec-6] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@79c8c922:org.apache.tomcat.util.net.NioChannel@770f386b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:8086 remote=/127.0.0.1:50871]]
+2024-03-15 08:39:53.845  INFO 22772 --- [main] org.example.ConfigServer                 : The following profiles are active: composite
+2024-03-15 08:39:54.252  WARN 22772 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-03-15 08:39:54.325  INFO 22772 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=577e6b24-4e5e-3299-afe5-4f8adeeaaa0a
+2024-03-15 08:39:54.502  INFO 22772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2024-03-15 08:39:54.508  INFO 22772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 08:39:54.508  INFO 22772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2024-03-15 08:39:54.581  INFO 22772 --- [main] o.a.c.c.C.[.[.[/config-server]           : Initializing Spring embedded WebApplicationContext
+2024-03-15 08:39:54.582  INFO 22772 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 728 ms
+2024-03-15 08:39:54.907  INFO 22772 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2024-03-15 08:39:54.945  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-03-15 08:39:54.946  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-03-15 08:39:55.005  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-03-15 08:39:55.005  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-03-15 08:39:55.310  INFO 22772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-15 08:39:56.191  INFO 22772 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2024-03-15 08:39:56.255  WARN 22772 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-03-15 08:39:56.266  INFO 22772 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-03-15 08:39:56.285  INFO 22772 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-03-15 08:39:56.357  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2024-03-15 08:39:56.357  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2024-03-15 08:39:56.358  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2024-03-15 08:39:56.358  INFO 22772 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2024-03-15 08:39:56.413  INFO 22772 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-03-15 08:39:56.428  INFO 22772 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-03-15 08:39:56.430  INFO 22772 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-03-15 08:39:56.433  INFO 22772 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1710463196432 with initial instances count: 0
+2024-03-15 08:39:56.458  INFO 22772 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2024-03-15 08:39:56.459  WARN 22772 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2024-03-15 08:39:56.466  INFO 22772 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2024-03-15 08:39:56.467  INFO 22772 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2024-03-15 08:39:56.473  INFO 22772 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2024-03-15 08:39:56.523  INFO 22772 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CONFIG-SERVER with eureka with status UP
+2024-03-15 08:39:56.524  INFO 22772 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1710463196524, current=UP, previous=STARTING]
+2024-03-15 08:39:56.526  INFO 22772 --- [Thread-20] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2024-03-15 08:39:56.526  INFO 22772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/config-server: registering service...
+2024-03-15 08:39:56.536  WARN 22772 --- [Thread-20] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2024-03-15 08:39:56.537  INFO 22772 --- [Thread-20] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-03-15 08:39:56.541  INFO 22772 --- [Thread-20] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2024-03-15 08:39:56.541  INFO 22772 --- [Thread-20] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2024-03-15 08:39:56.548  INFO 22772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path '/config-server'
+2024-03-15 08:39:56.548  INFO 22772 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2024-03-15 08:39:56.550  INFO 22772 --- [Thread-20] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2024-03-15 08:39:56.551  INFO 22772 --- [Thread-20] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2024-03-15 08:39:56.628  INFO 22772 --- [http-nio-8086-exec-3] o.a.c.c.C.[.[.[/config-server]           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15 08:39:56.629  INFO 22772 --- [http-nio-8086-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15 08:39:56.634  INFO 22772 --- [http-nio-8086-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-03-15 08:39:56.688  INFO 22772 --- [http-nio-8086-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER/config-server with status UP (replication=false)
+2024-03-15 08:39:56.701  INFO 22772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/config-server - registration status: 204
+2024-03-15 08:39:56.829  INFO 22772 --- [main] org.example.ConfigServer                 : Started ConfigServer in 4.617 seconds (JVM running for 5.266)
+2024-03-15 08:40:03.950  WARN 22772 --- [http-nio-8086-exec-4] c.n.e.registry.AbstractInstanceRegistry  : No remote registry available for the remote region us-east-1
+2024-03-15 08:40:04.620  INFO 22772 --- [http-nio-8086-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: classpath:/svcA/svcA-pro.yml
+2024-03-15 08:40:04.620  INFO 22772 --- [http-nio-8086-exec-2] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: classpath:/svcA/svcA.yml
+2024-03-15 08:40:06.239  INFO 22772 --- [http-nio-8086-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SVCA/zem-mate14s:svcA:8083 with status UP (replication=false)
+2024-03-15 08:40:26.542  INFO 22772 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CONFIG-SERVER with eureka with status DOWN
+2024-03-15 08:40:26.543  INFO 22772 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1710463226543, current=DOWN, previous=UP]
+2024-03-15 08:40:26.544  INFO 22772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/config-server: registering service...
+2024-03-15 08:40:26.560  INFO 22772 --- [http-nio-8086-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CONFIG-SERVER/config-server with status DOWN (replication=false)
+2024-03-15 08:40:26.562  INFO 22772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CONFIG-SERVER/config-server - registration status: 204
+2024-03-15 08:40:26.977  INFO 22772 --- [SpringContextShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2024-03-15 08:40:26.988  INFO 22772 --- [SpringContextShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2024-03-15 08:40:26.994  INFO 22772 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-15 08:40:26.996  INFO 22772 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
