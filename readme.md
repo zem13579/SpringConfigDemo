@@ -13,5 +13,10 @@ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-ma
 ```
 打开 http://localhsot:15672 查看管理端口 输入密码guest/guest 
 
-### 3.启动顺序 先configserver 后 configclient
+### 3.启动顺序 先configserver 后 configclient，configclient2
 
+### 4.实现效果
+相比与不带bus的版本，可以实现刷新一个 http://127.0.0.1:8083/actuator/bus-refresh/ 后所有的客户端都会刷新 ，但还是属于半自动，无法实现全自动
+因为在springconfig的设计中应该由git的webhock来充当扳机，触发接口。
+
+参考文档 https://www.cnblogs.com/fengzheng/p/11242128.html

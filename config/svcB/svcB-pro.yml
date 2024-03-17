@@ -1,3 +1,5 @@
 server:
   port: 8082
-profile: pro
+profile: pro-B
+
+envTag: formBpro

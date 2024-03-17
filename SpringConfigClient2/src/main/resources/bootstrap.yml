@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: svcB
+  profiles:
+    active: pro
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "refresh"
+          - "bus-refresh"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8086/config-server/eureka/
+

@@ -17,6 +17,7 @@
     <modules>
         <module>SpringConfigServer</module>
         <module>SpringConfigClient</module>
+        <module>SpringConfigClient2</module>
     </modules>
     <properties>
         <java.version>8</java.version>
