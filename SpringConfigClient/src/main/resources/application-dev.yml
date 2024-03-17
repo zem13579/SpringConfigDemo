@@ -7,3 +7,10 @@ logging:
     root: debug
   file:
     name: log/svcA/svcA.log
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

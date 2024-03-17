@@ -16,7 +16,9 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include:
+          - "refresh"
+          - "bus-refresh"
 
 eureka:
   client:
