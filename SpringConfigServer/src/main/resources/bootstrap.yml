@@ -9,7 +9,7 @@ spring:
       server:
         composite:
         - type: native
-          search-locations: [ classpath:/svcA, classpath:/svcB ]
+          search-locations: [ file:./config/svcA, file:./config/svcB ]
         bootstrap: true
         prefix: /config
   profiles:
@@ -32,4 +32,4 @@ logging:
   level:
     root: info
   file:
-    name: config-server.log
+    name: log/config-server/config-server.log

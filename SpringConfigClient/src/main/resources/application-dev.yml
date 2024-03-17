@@ -1,3 +1,9 @@
 
 env:
   tag: svcA
+
+logging:
+  level:
+    root: debug
+  file:
+    name: log/svcA/svcA.log

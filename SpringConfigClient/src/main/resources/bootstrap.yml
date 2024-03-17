@@ -9,14 +9,17 @@ spring:
         enabled: true
         service-id: config-server
 
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8086/config-server/eureka/
 
-logging:
-  level:
-    root: info
-  file:
-    name: svcA.log
