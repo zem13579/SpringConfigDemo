@@ -8,6 +8,7 @@ spring:
       discovery:
         enabled: true
         service-id: config-server
+      label: v0.0.1
 
 management:
   endpoint:

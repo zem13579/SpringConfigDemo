@@ -7,13 +7,16 @@ spring:
   cloud:
     config:
       server:
-        composite:
-        - type: native
-          search-locations: [ file:./config/svcA, file:./config/svcB ]
-        bootstrap: true
         prefix: /config
+        jdbc:
+          sql: SELECT KEY,VALUE FROM TESTLU.PROPERTIES WHERE APPLICATION = ? AND PROFILE = ? AND LABEL = ? ORDER BY ID
   profiles:
-    active: composite
+    active: jdbc
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: testlu
+    password: LuQAZwsx
+    driver-class-name: oracle.jdbc.driver.OracleDriver
 
 eureka:
   instance:
@@ -33,3 +36,5 @@ logging:
     root: info
   file:
     name: log/config-server/config-server.log
+
+
