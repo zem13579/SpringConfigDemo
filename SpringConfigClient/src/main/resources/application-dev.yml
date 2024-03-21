@@ -1,9 +1,10 @@
-
+server:
+  port: 8089
 env:
   tag: svcA
 
 logging:
   level:
-    root: debug
+    root: info
   file:
     name: log/svcA/svcA.log

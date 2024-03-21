@@ -2,4 +2,7 @@ server:
   port: 8083
 profile: pro-changed-two
 
-envTag: formApro
+envTag: formA-dev
+
+env:
+  tag: svcA-remote

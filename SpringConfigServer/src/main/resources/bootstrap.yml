@@ -13,7 +13,7 @@ spring:
         bootstrap: true
         prefix: /config
   profiles:
-    active: composite
+    active: composite,dev
 
 eureka:
   instance:
