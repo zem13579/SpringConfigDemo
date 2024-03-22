@@ -11,7 +11,7 @@ spring:
         jdbc:
           sql: SELECT KEY,VALUE FROM TESTLU.PROPERTIES WHERE APPLICATION = ? AND PROFILE = ? AND LABEL = ? ORDER BY ID
   profiles:
-    active: jdbc
+    active: jdbc,dev
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:XE
     username: testlu

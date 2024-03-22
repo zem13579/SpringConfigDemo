@@ -2,7 +2,7 @@ spring:
   application:
     name: svcA
   profiles:
-    active: pro
+    active: pro,dev
   cloud:
     config:
       discovery:
