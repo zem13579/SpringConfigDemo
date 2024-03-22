@@ -2,12 +2,13 @@ spring:
   application:
     name: svcA
   profiles:
-    active: pro
+    active: pro,dev
   cloud:
     config:
       discovery:
         enabled: true
         service-id: config-server
+      label: v0.0.1
 
 management:
   endpoint:
@@ -16,7 +17,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: "refresh"
 
 eureka:
   client:
